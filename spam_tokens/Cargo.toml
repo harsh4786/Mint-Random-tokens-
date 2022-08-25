@@ -1,0 +1,24 @@
+[package]
+name = "spam_tokens"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "spam_tokens"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.25.0"
+switchboard-v2 = "0.1.14"
+x25519-dalek = "1.2.0"
+anchor-spl = "0.25.0"
+bytemuck = "1.12.1"
+num = "0.4.0"
